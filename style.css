@@ -213,7 +213,8 @@ a {
 
     .about-content img {
         width: 200px; /* Smaller image size for mobile */
-        height: 200px; /* Same height as width */
+        height: 200px;/* Same height as width */
+        border-radius: 50%;
     }
 
     .collapsible {
