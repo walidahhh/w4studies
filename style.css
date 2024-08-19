@@ -131,59 +131,80 @@ a {
 }
 
 
-/* About Section */
+/* General About Section Styles */
 .about {
-    display: flex;
-    flex-wrap: wrap; /* Adjust layout for smaller screens */
-    padding: 2rem;
+    padding: 3rem;
     background: #fff;
-    border-top: 2px solid #F9B3A7; /* Add a border to match your brand color */
+    border-top: 2px solid #F9B3A7;
+    margin: 0 auto;
 }
 
-.about-img img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
+/* Container for Content */
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Collapsible Button Styles */
+.collapsible {
+    background-color: #F9B3A7;
+    color: #fff;
+    cursor: pointer;
+    padding: 1.25rem;
+    border: none;
+    text-align: left;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.about-content {
-    flex: 1 1 50%;
-    padding: 1rem;
-}
-
-.about-content h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #333;
-}
-
-.about-content h3 {
-    font-size: 1.5rem;
-    color: #F9B3A7;
-    margin-bottom: 1rem;
-}
-
-.about-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-}
-
-.about-content a {
-    background-color: #F9B3A7;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.about-content a:hover {
+.collapsible:hover {
     background-color: #f7a393;
 }
+
+/* Collapsible Content Styles */
+.collapsible-content {
+    display: none;
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+    background-color: #F1F1F1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.collapsible-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #666;
+    margin: 0;
+}
+
+/* Active Collapsible Button Style */
+.collapsible.active {
+    background-color: #f7a393;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 1rem;
+    }
+
+    .collapsible {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .collapsible-content {
+        padding: 1rem;
+    }
+}
+
 
 /* Services Section */
 .services {
