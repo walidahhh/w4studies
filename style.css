@@ -162,6 +162,7 @@ a {
 /* Text Styles */
 .about-text {
     flex: 1; /* Allow the text to take up remaining space */
+    text-align: left;
 }
 /* Collapsible Button Styles */
 .collapsible {
