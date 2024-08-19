@@ -17,6 +17,7 @@
             <a href="#about">About Me</a>
             <a href="#services">Services</a>
             <a href="#testimonials">Testimonials</a>
+            <a href="#personal-statement-form">Personal Statement</a>
             <a href="#blog">Blog</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -150,17 +151,20 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="file-upload">Upload Your Personal Statement:</label>
-            <input type="file" id="file-upload" name="file-upload" required>
-            <input type="hidden" id="file-url" name="file-url">
+            <input type="text" id="file-url" name="file-url" placeholder="Paste your File.io URL here" required>
+
+            <button type="submit" class="btn-2">Submit for Review</button>
 
             <button type="submit" class="btn-2">Submit for Review</button>
         </form>
 
         <div id="upload-instructions">
-            <p>To upload your personal statement, use the following service:</p>
-            <a href="https://file.io" target="_blank">Upload here</a>
-            <p>Then, copy and paste the link to your uploaded file into the "File URL" field before submitting the form.</p>
+           <p>To submit your personal statement, please follow these steps:</p>
+<ol>
+    <li>Upload your personal statement to <a href="https://www.file.io" target="_blank">File.io</a>.</li>
+    <li>Copy the provided file URL from File.io.</li>
+    <li>Paste the URL into the "File URL" field in the form above and submit.</li>
+</ol>
         </div>
     </div>
 </section>
