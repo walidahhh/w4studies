@@ -1,5 +1,5 @@
 w4studies.com
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/walidahhh/w4studies.git
 cd yourrepository
 echo 'www.w4studies.com' > CNAME
 git add CNAME
