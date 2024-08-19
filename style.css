@@ -147,6 +147,7 @@ a {
     display: flex;
     align-items: center;
     gap: 2rem; /* Add space between the image and content */
+    flex-direction: row;
 }
 
 /* Image Styles for Desktop */
@@ -156,6 +157,7 @@ a {
     border-radius: 50%; /* Circular shape */
     object-fit: cover; /* Ensure the image covers the circle */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    flex-shrink: 0;
 }
 /* Text Styles */
 .about-text {
