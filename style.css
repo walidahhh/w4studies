@@ -134,14 +134,20 @@ a {
 /* About Section */
 .about {
     display: flex;
+    flex-direction: row; /* Ensure horizontal layout for desktop */
     padding: 2rem;
     background: #fff;
     align-items: center;
-    gap: 3em;
+    gap: 2em; /* Adjust gap as needed */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between; /* Distribute space between items */
 }
 
 /* Image Styling */
+.about-img {
+    flex: 1; /* Allow image container to grow */
+}
+
 .about-img img {
     max-width: 100%;
     height: auto;
@@ -151,34 +157,37 @@ a {
 }
 
 /* Content Styling */
-.about-content {
-    max-width: 50%;
+.summary {
+    flex: 2; /* Allow text container to grow more than image container */
     padding: 1rem;
 }
 
-/* Heading 2 Styling */
-.about-content h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+/* Heading 1 Styling */
+.summary h1 {
+    font-size: 2.5rem;
     color: #333;
 }
 
+.summary h1 span {
+    color: #F9B3A7; /* Highlighted span color */
+}
+
 /* Heading 3 Styling */
-.about-content h3 {
+.summary h3 {
     font-size: 1.5rem;
     color: #F9B3A7;
     margin-bottom: 1rem;
 }
 
 /* Paragraph Styling */
-.about-content p {
+.summary p {
     font-size: 1rem;
     line-height: 1.6;
     color: #666;
 }
 
 /* Button Styling */
-.about-content a {
+.summary a {
     background-color: #F9B3A7;
     color: #fff;
     padding: 0.5rem 1rem;
@@ -189,29 +198,82 @@ a {
     transition: background-color 0.3s ease;
 }
 
-.about-content a:hover {
+.summary a:hover {
     background-color: #f7a393;
+}
+
+/* Collapsible Sections */
+.collapsible-sections {
+    flex: 1; /* Allow collapsible sections to grow */
+    margin-top: 2rem; /* Space above collapsible sections */
+}
+
+/* Collapsible Button */
+.collapsible {
+    background-color: #F9B3A7; /* Match the button color with your brand color */
+    color: #fff;
+    cursor: pointer;
+    padding: 1.25rem;
+    border: none;
+    text-align: left;
+    width: 100%; /* Make it full-width for better mobile experience */
+    max-width: 600px; /* Limit max width to make it look good on larger screens */
+    border-radius: 8px;
+    font-size: 1.125rem; /* Adjust font size */
+    font-weight: 600;
+    margin-top: 1.5rem; /* Space between sections */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.collapsible:hover {
+    background-color: #f7a393; /* Slightly darker shade on hover */
+}
+
+/* Collapsible Content */
+.collapsible-content {
+    display: none;
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+    background-color: #F1F1F1; /* Lighter background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.collapsible-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #666;
+    margin: 0; /* Remove default margin */
+}
+
+/* Active Collapsible Button Style */
+.collapsible.active {
+    background-color: #f7a393; /* Adjust if needed to match your design */
 }
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .about {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: column; /* Stack elements vertically on mobile */
         text-align: center; /* Center-align text */
     }
 
-    .about-content {
+    .summary {
         max-width: 100%; /* Full-width content on mobile */
+        padding: 1rem;
     }
 
     .about-img img {
         max-width: 150px; /* Smaller image for mobile */
+        margin: 0 auto; /* Center image */
     }
 
-    .about-content a {
+    .summary a {
         margin-top: 1rem; /* Ensure button spacing on mobile */
     }
 }
+
 
 /* Collapsible Button Styles */
 .collapsible {
