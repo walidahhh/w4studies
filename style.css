@@ -268,6 +268,74 @@ a {
     font-style: italic;
     color: #666;
 }
+/* Personal Statement Form Section */
+.personal-statement-form {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.personal-statement-form .form-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.personal-statement-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+.personal-statement-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-statement-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.personal-statement-form input[type="text"],
+.personal-statement-form input[type="email"],
+.personal-statement-form input[type="file"] {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.personal-statement-form .btn-2 {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.personal-statement-form .btn-2:hover {
+    background-color: #004494;
+}
+
+#upload-instructions {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #555;
+}
+
+#upload-instructions a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+#upload-instructions a:hover {
+    text-decoration: underline;
+}
 
 /* Contact Form Section */
 .contact-form {
