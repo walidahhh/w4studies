@@ -144,6 +144,18 @@ a {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Add space between the image and content */
+}
+
+/* Image Styles for Desktop */
+.about-content img {
+    width: 300px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensure the image covers the circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
 /* Collapsible Button Styles */
@@ -192,10 +204,17 @@ a {
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     .about-content {
+        flex-direction: column; /* Stack image and content vertically */
         padding: 1rem;
     }
 
+    .about-content img {
+        width: 200px; /* Smaller image size for mobile */
+        height: 200px; /* Same height as width */
+    }
+
     .collapsible {
+        background-color: #F9B3A7; /* Original button color on mobile */
         padding: 1rem;
         font-size: 1rem;
     }
