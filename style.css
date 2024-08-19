@@ -157,7 +157,10 @@ a {
     object-fit: cover; /* Ensure the image covers the circle */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
-
+/* Text Styles */
+.about-text {
+    flex: 1; /* Allow the text to take up remaining space */
+}
 /* Collapsible Button Styles */
 .collapsible {
     background-color: #F9B3A7;
