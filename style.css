@@ -387,6 +387,33 @@ a {
 #upload-instructions a:hover {
     text-decoration: underline;
 }
+/* Blog Section */
+.blog {
+    padding: 2rem;
+    background: #fff; /* Match the background color with the rest of the site */
+    text-align: center;
+    max-width: 900px; /* Restrict the width for better readability */
+    margin: 0 auto; /* Center the blog section horizontally */
+    border-top: 2px solid #F9B3A7; /* Add border to match the brand color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 8px; /* Rounded corners for consistency */
+}
+
+/* Blog Heading */
+.blog .heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333; /* Consistent heading color */
+    font-weight: bold; /* Make the heading bold */
+}
+
+/* Coming Soon Text */
+.blog .coming-soon {
+    font-size: 1.5rem;
+    color: #666; /* Match text color with the rest of the site */
+    font-style: italic;
+}
+
 
 /* Contact Form Section */
 .contact-form {
