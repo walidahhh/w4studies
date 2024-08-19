@@ -131,39 +131,88 @@ a {
 }
 
 
-/* General About Section Styles */
+/* About Section */
 .about {
-    padding: 3rem;
-    background: #fff;
-    border-top: 2px solid #F9B3A7;
-    margin: 0 auto;
-}
-
-/* Container for Content */
-.about-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
     display: flex;
+    padding: 2rem;
+    background: #fff;
     align-items: center;
-    gap: 2rem; /* Add space between the image and content */
-    flex-direction: row;
+    gap: 3em;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-/* Image Styles for Desktop */
-.about-content img {
-    width: 300px; /* Fixed width */
-    height: 300px; /* Fixed height */
-    border-radius: 50%; /* Circular shape */
-    object-fit: cover; /* Ensure the image covers the circle */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    flex-shrink: 0;
+/* Image Styling */
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px; /* Restrict image size for better layout */
 }
-/* Text Styles */
-.about-text {
-    flex: 1; /* Allow the text to take up remaining space */
-    text-align: left;
+
+/* Content Styling */
+.about-content {
+    max-width: 50%;
+    padding: 1rem;
 }
+
+/* Heading 2 Styling */
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Heading 3 Styling */
+.about-content h3 {
+    font-size: 1.5rem;
+    color: #F9B3A7;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph Styling */
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Button Styling */
+.about-content a {
+    background-color: #F9B3A7;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.about-content a:hover {
+    background-color: #f7a393;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .about-content {
+        max-width: 100%; /* Full-width content on mobile */
+    }
+
+    .about-img img {
+        max-width: 150px; /* Smaller image for mobile */
+    }
+
+    .about-content a {
+        margin-top: 1rem; /* Ensure button spacing on mobile */
+    }
+}
+
 /* Collapsible Button Styles */
 .collapsible {
     background-color: #F9B3A7;
